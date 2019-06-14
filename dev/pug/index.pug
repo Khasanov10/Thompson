@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+	html(lang="en")
+		head
+			meta(charset="UTF-8")
+			meta(name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no")
+			meta(name="author" content="")
+			meta(name="description" content="Some text")
+			link(rel="icon" href="src/img/icons/favicon.png")
+			//- CSS
+			link(rel="stylesheet" href="src/css/libs.min.css")
+			link(rel="stylesheet" href="src/css/main.css")
+			link(rel="stylesheet" href="src/css/circles.css")
+			link(rel="stylesheet" href="src/css/courses-icons.css")
+			title Thompson School
+		body
+			
+			// Main Section
+			section#main
+
+				// Header
+				#header
+
+					.container.pr-0
+						// Navbar
+						nav.navbar.navbar-expand-lg.pr-0.pl-0
+							a.navbar-brand.lg(href="index.html")
+								img(src="src/img/logo-navbar.png")
+							a.navbar-brand.md(href="index.html")
+								img(src="src/img/logo-navbar-sm.png")
+							button.navbar-toggler(type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation")
+								span
+									i.fa.fa-bars
+							.nav-contact
+								p +998 (78) 122 10 10
+								span.lg
+									img(src="src/img/icons/nav-call.png")
+								span.md
+									img(src="src/img/icons/nav-call-red.png")
+								a(href="#") заказать звонок
+							.collapse.navbar-collapse#navbarSupportedContent
+								ul.navbar-nav.mr-auto.ml-auto
+									li.nav-item.active
+										a.nav-link(href="#why") Почему мы?
+											span.sr-only (current)
+										li.nav-item.active
+											a.nav-link(href="#course-info") Наши курсы
+										li.nav-item
+											a.nav-link(href="#comments") Мнения людей
+										li.nav-item
+											a.nav-link(href="#team") Наша команда
+										li.nav-item
+											a.nav-link(href="#contact") Вакансии
+										li.nav-item
+											.nav-contact
+												p +998 (78) 122 10 10
+												span.lg
+													img(src="src/img/icons/nav-call.png")
+												span.md
+													img(src="src/img/icons/nav-call-red.png")
+												a(href="#") заказать звонок	
+										li.nav-item
+											a.lang-sm(href="#")
+												img(src="src/img/icons/world-lang-sm.png")
+
+					a.lang(href="#")
+						img(src="src/img/icons/world-lang.png")
+
+				// Showcase
+				#showcase
+					.container
+						.row
+							.col-lg-12.for-stick
+
+								h1.main-title Мы научим вас
+									span  мощному 
+										br 
+										| Английскому Языку
+										br
+									| и еще многому!
+						.row.position-relative
+							.col-lg-6.col-md-8.col-sm-12.bullets
+								ul.bullets-item
+									li
+										span
+											img(src="src/img/icons/bullets-1.png")
+										| Новейшие методы обучения
+									li
+										span
+											img(src="src/img/icons/bullets-2.png")
+										| Подход к каждому ученику
+									li
+										span
+											img(src="src/img/icons/bullets-3.png")
+										| Высочайший результат
+								
+								a(href="test.html").test-button.btn Подобрать курс!
+								br
+								a(href="#").link-to-lang Не английский?
+								.tip-first
+									.row
+										div
+											img(src="src/img/icons/arrow-up.png")
+										div.text
+											span
+												| После теста, вы получите
+												br
+												| лучший курс для вас
+
+							// Block-harry
+							.col-lg-6.position-relative.block-harry
+								img.hello-harry(src="src/img/hello-harry.png")
+								.harry
+									img.harry-img(src="src/img/harry.png")
+									a.video-button(data-toggle="modal" data-target="#video-modal")
+										span.triangle
+								.tip-second
+										div
+											img(src="src/img/icons/arrow-left.png")
+										div
+											p.text
+												| Посмотрите наше
+												br
+												| вступительное видео
+
+							// Circles and video-sm
+							.col-md-4.col-sm-10.video-sm.d-none
+								.circle-wrapper
+									.circle.circle-1
+										.circle.circle-2
+											.circle.circle-3
+								a.video-button-sm(data-toggle="modal" data-target="#video-modal")
+									span.triangle
+			
+			// Modal-for-video			
+			.modal.fade#video-modal(tabindex="1" role="dialog" aria-labelledby="video-modal-label" aria-hidden="true")
+				.modal-dialog.modal-dialog-centered(role="document")
+					.modal-body
+						video.w-100(controls)
+							// Put video into video folder
+							source(src="src/video/thompson.mp4" type="video/mp4")
+							| Your browser does not support the video tag.
+			
+
+			// Features
+			section#features
+				.container
+					h1.features-title
+						| Thompson school, как
+						br
+						span Лучший Выбор
+					.features-block
+						.row
+							.col-lg-6.features-item
+								.row
+									.col-2.icon
+										img(src="src/img/icons/reason-1.png")
+										span.number-bg 1
+									.col-10.mt-3.text
+										h5
+											| Инновационный подход
+										p
+											| Thompson school использует оригинальные и интересные пути обучения, которые не датут заскучать.
+							.col-lg-6.features-item
+								.row
+									.col-2.icon
+										img(src="src/img/icons/reason-2.png")
+										span.number-bg 2
+									.col-10.mt-3.text
+										h5
+											| Проверенные материалы
+										p
+											| В процессе курсов используются только стопроценто работающие материалы дающие полные знания.
+							.w-100
+							.col-lg-6.features-item
+								.row
+									.col-2.icon
+										img(src="src/img/icons/reason-3.png")
+										span.number-bg 3	
+									.col-10.mt-3.text
+										h5
+											| 100% результат
+										p
+											| Команда Thompson school сделает все что-бы каждый ученик несомненно видел результат своих стараний.
+							.col-lg-6.features-item
+								.row
+									.col-2.icon
+										img(src="src/img/icons/reason-4.png")
+										span.number-bg 4	
+									.col-10.mt-3.text
+										h5
+											| Дружная атмосфера
+										p
+											| Наша школа не просто группа очень интерестных людей, а целая семья!
+			// Why our courses
+			section#why
+				.container
+					.row
+						.col-lg-6.why-item
+							h1.why-title
+								| Почему 
+								span вам нужны
+								br
+								| наши курсы
+						
+							p
+								| Мы не просто учебный центр, а одна большая семья с единственной целью, помочь нашим студентам в достижении их цели!					
+							p
+								| С нами вы точно сможете изучить языки максимально эффективно и максимально в короткий срок. Вас ждёт: профессиональные и крутые преподаватели, доброжелательная администрация, интерактивные занятия и мощная доза мотивации!
+						.col-lg-6.video
+							.circle.circle-1
+								.circle.circle-2
+									.circle.circle-3
+										.circle.circle-4
+							a.video-button(data-toggle="modal" data-target="#video-modal")
+								span.triangle
+			// Course-info
+			section#course-info
+				.container
+					.row.center
+						.col-lg-10.col-md-12.col-sm-12.course-info-item
+							.row.center
+								.col-lg-4.col-md-5.col-sm-5.col-10.tabcontent
+									#rocket.tabcontent-item
+										h4 Интенсивный Английский
+										p
+											| Интенсивный Английский (Intensive English) - Курсы английского языка с самого начального до продвинутого. Курс включает в себя speaking club, debate club и movie time.	
+										p.course-amount 6 courses
+										span.triangle
+									#ielts.tabcontent-item(style='display:block')
+										h4 IELTS
+										p
+											| С базовыми знаниями английского языка достигайте всех желаемых результатов, от 4.5 до 8.0+. В курсы входят Massive Practice, Speaking Club и Movie Time
+										p.course-amount 4 courses
+										span.triangle
+									#it.tabcontent-item
+										h4 Другие языки
+										p
+											| LANGUAGE BOOM - Говорите на нескольких языках вместе с Thompson School
+										p.course-amount 4 courses
+										span.triangle
+									#other-lang.tabcontent-item
+										h4 Другие экзамены
+										p
+											| Подготовка к различным экзменам для образования в США
+											br
+											| - SAT
+											br
+											| - GMAT
+										span.triangle
+									#plus.tabcontent-item
+										h4 Математика
+										p
+											| Курсы для получения знаний в математики для поступления в ВУЗы. Обучение проводиться на русском языке или на английском языке для поступления в международные ВУЗы.
+										p.course-amount 2 courses
+										span.triangle
+								.w-100
+								.col-lg-10.m-auto.tab
+									.row
+										.col-2.center.offset-1
+											button.btn.tablinks#one(onclick="openCity(event, 'rocket')")
+												img(src="src/img/icons/course-info-1.png")
+										.col-2.center
+											button.btn.tablinks#two(onclick="openCity(event, 'ielts')")
+												img(src="src/img/icons/course-info-2.png")
+										.col-2.center
+											button.btn.tablinks#three(onclick="openCity(event, 'it')")
+												img(src="src/img/icons/course-info-3.png")
+										.col-2.center
+											button.btn.tablinks#four(onclick="openCity(event, 'other-lang')")
+												img(src="src/img/icons/course-info-4.png")
+										.col-2.center
+											button.btn.tablinks#five(onclick="openCity(event, 'plus')")
+												img(src="src/img/icons/course-info-5.png")
+			// Courses
+			section#courses
+				.container
+					p.course-amount 4 courses
+					.course-slider
+						.course-slider-item
+							h5 ielts achieve
+							span.sm.btn 4 месяца
+							p
+								| Курс направлен на изучение основ и структуры IELTS EXAM. Результат 6.5+.
+							p.duration
+								| Длительность:
+								span.btn 4 месяца
+							a(href="#").more Подробнее
+						.course-slider-item
+							h5 ielts complete
+							span.sm.btn 3 месяца
+							p
+								| Углубленный курс, с  целью повысить все модули IELTS Резултат 7.0+.
+							p.duration
+								| Длительность:
+								span.btn 3 месяца
+							a(href="#").more Подробнее
+						.course-slider-item
+							h5 ielts max
+							span.sm.btn 2 месяца
+							p
+								| Новые структуры экзамена, интерактивные зантяия и в 2 раза больше практики!
+							p.duration
+								| Длительность:
+								span.btn 2 месяца
+							a(href="#").more Подробнее
+						.course-slider-item
+							h5 ielts something
+							span.sm.btn 1 месяца
+							p
+								| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, sed.
+							p.duration
+								| Длительность:
+								span.btn 1 месяца
+							a(href="#").more Подробнее
+			// Take Course
+			section#take-test
+				.container
+					.row
+						.col-lg-7.left
+							h1 Пройди тест и узнай
+								br
+								span что выбрать
+
+							p 1. Выберите направление выше
+								br
+								| 2. Пройдите тест, после которого мы определим ваш
+								br
+								| уровень и наиболее подходящие курс под ваши знания 
+								br 
+								| и цели!
+						.col-lg-5.right
+							form(action="").col-12
+								.form-group.col-lg-12.col-md-10
+									label.form-label(for="name") Ваше имя
+									input.form-control.form-input#name(type="text")
+								.form-group.col-lg-12.col-md-10
+									label.form-label(for="phone") Номер телефона
+									input.form-control.form-input#phone(type="text")
+								div.center
+									a.test-button.btn(href="test.html") Подобрать курс!
+									div.for-call
+										span
+											img(src="src/img/icons/order-call.png")
+										a.call(href="#") заказать звонок	
+			// Comments
+			section#comments
+				.container
+					.comment-slider
+						.comment-slider-item
+							.row.center
+								.block.col-lg-7
+									img.avatar(src="src/img/comment-avatar.png")
+									span.quote
+										img(src="src/img/icons/quote.png")
+									p.text
+										|	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+									p.name
+										| IELTS 8.5 
+										span Nikki Fenn
+						.comment-slider-item
+							.row.center
+								.block.col-lg-7
+									img.avatar(src="src/img/comment-avatar.png")
+									span.quote
+										img(src="src/img/icons/quote.png")
+									p.text
+										|	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+									p.name
+										| IELTS 8.0 
+										span Nikki Menn			
+				.circle-wrapper.col-lg-12
+					.circle.circle-1
+						.circle.circle-2
+							.circle.circle-3
+			// Team
+			section#team
+				.container
+					h1 Встречайте команду
+						br 
+						span Thompson school
+					.row
+						.team-item.col-lg-4.col-md-4.col-sm-6.col-8
+							img(src="src/img/team-harry.png")
+							div
+								h4 Harry Thompson
+								h5 IELTS Instructor
+						.team-item.col-lg-4.col-md-4.col-sm-6.col-8
+							img(src="src/img/team-asror.png")
+							div
+								h4 Asror Toshev
+								h5 IELTS Instructor
+						.team-item.col-lg-4.col-md-4.col-sm-6.col-8
+							img(src="src/img/team-shakh.png")
+							div
+								h4 Shakhzoda Bakhodirova
+								h5 IELTS Instructor
+			// Target
+			section#target
+				.container
+					.row
+						.col-lg-6.left
+							h1
+								| А вы готовы начать
+								br
+								| свое 
+								span незабываемое
+								br
+								| обучение?
+							
+							p
+								| Становясь частью Thompson school, вы делаете огромнейший вклад в себя и в свое будущее, где вы будете успешно применять те знания, которые получите. Как первый шаг, пройдите тест для определения вашего курса!
+							p
+								| Если вы родитель закажите звонок, мы свяжемся с вами и обсудим все детали будущего образования ваших детей в Thompson school.
+						.col-lg-6.right
+							form(action="")
+								.form-group.col-lg-10.col-md-8
+									label.form-label(for="name") Ваше имя
+									input.form-control.form-input#name(type="text")
+								.form-group.col-lg-10.col-md-8
+									label.form-label(for="phone") Номер телефона
+									input.form-control.form-input#phone(type="text")
+								.center
+									a.test-button.btn(href="#") Подобрать курс!
+									div.for-call
+										span
+											img(src="src/img/icons/order-call.png")
+										a.call(href="#") заказать звонок
+								.tip-third
+									div
+										img(src="src/img/icons/target-arrow.png")
+									div
+										p.text
+											| Жми, узнай свой уровень
+											br
+											| и получи свой курс
+							.circle-wrapper
+								.circle.circle-1
+									.circle.circle-2
+										.circle.circle-3
+			// Contact
+			section#contact
+				.container
+					h1 
+						span Наши контакты 
+						| и форма 
+						br
+						| обратной связи
+					.row.center
+						.col-lg-3.address
+							.row
+								.address-item.col-lg-12.col-md-6
+									h5 Номер Телефона
+									p +998 78 122 10 10
+								.address-item.col-lg-12.col-md-6
+									h5 Адрес
+									p 15/2 Chilonzor District
+										br
+										| Tashkent, UZ 100121
+								.address-item.col-lg-12.col-md-6
+									h5 E-mail
+									p Support@thompson.com
+								.address-item.col-lg-12.col-md-6.display-inline-block
+									a(href="https://www.instagram.com/thompson_uz/")
+										img(src="src/img/icons/instagram.png")
+									a(href="https://www.facebook.com/thompsonschooluz/")
+										img(src="src/img/icons/facebook.png")
+									a(href="#")
+										img(src="src/img/icons/twitter.png")
+						.col-lg-6.form
+							form
+								.form-row
+									.form-group.col-md-6
+										label.form-label(for="name-contact") Имя
+										input.form-input.form-control#name-contact(type="text")
+									.form-group.col-md-6
+										label.form-label(for="phone-contact") Номер телефон
+										input.form-input.form-control#phone-contact(type="text")
+								.form-group
+									label.form-label(for="email") Почта
+									input.form-input.form-control#email(type="email")
+								.form-group
+									label.form-label(for="message") Сообщение
+									input.form-input.form-control#message(type="text")
+								.for-btn
+									a(href="#").btn Send
+					.cooperate.col-lg-6
+						.row
+							.col-6.center
+								p Хотите сотрудничать
+									br
+									| с Thompson school?
+							.col-6.center
+								p +998 (97) 718-07-06
+			// Map
+			section#map
+				iframe(src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11988.376790911998!2d69.23824912129805!3d41.30681435132875!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7dc0bdb203851445!2sTHOMPSON+SCHOOL!5e0!3m2!1sru!2s!4v1559109872512!5m2!1sru!2s" width="100%" height="500" frameborder="0" style="border:0" allowfullscreen)
+			// Footer
+			footer
+				h5 thompson.uz | Thompson school
+			// Scripts
+			script(src="src/js/libs.min.js")
+			script(src="src/js/main.js")

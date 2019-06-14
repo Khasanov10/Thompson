@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+	html(lang="en")
+		head
+			meta(charset="UTF-8")
+			meta(name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no")
+			meta(name="author" content="")
+			meta(name="description" content="Some text")
+			link(rel="icon" href="src/img/icons/favicon.png")
+			//- CSS
+			link(rel="stylesheet" href="src/css/libs.min.css")
+			link(rel="stylesheet" href="src/css/congrat.css")
+			title Congrat
+		body
+
+			// Header
+			#header
+				.container.pr-0
+					// Navbar
+					nav.navbar.navbar-expand-lg.pr-0.pl-0
+						a.navbar-brand.lg(href="index.html")
+							img(src="src/img/logo-navbar.png")
+						a.navbar-brand.md(href="index.html")
+							img(src="src/img/logo-navbar-sm.png")
+						button.navbar-toggler(type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation")
+							span
+								i.fa.fa-bars
+						.nav-contact
+							p +998 (78) 122 10 10
+							span.lg
+								img(src="src/img/icons/nav-call.png")
+							span.md
+								img(src="src/img/icons/nav-call-red.png")
+							a(href="#") заказать звонок
+						.collapse.navbar-collapse#navbarSupportedContent
+							ul.navbar-nav.mr-auto.ml-auto
+									li.nav-item
+										.nav-contact
+											p +998 (78) 122 10 10
+											span.lg
+												img(src="src/img/icons/nav-call.png")
+											span.md
+												img(src="src/img/icons/nav-call-red.png")
+											a(href="#") заказать звонок	
+				a.lang(href="#")
+					img(src="src/img/icons/world-lang.png")
+				a.lang-sm(href="#")
+					img(src="src/img/icons/world-lang-sm.png")
+			#main
+				.container
+					.row
+						.col-lg-6.col-md-6.col-10.col-10.center
+							p.result Your score 10 from 15
+							h3.level Intermediate
+							p.info
+								| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, vero! Enim voluptatibus sunt obcaecati, aliquid, corporis unde iure eos.
+								br
+								br
+								| Наш менеджер скоро вам перезвонить
+							a.back-to-main(href="index.html")
+								i.fa.fa-arrow-left
+								| Главная страница	
+						.col-lg-6.col-md-6.col-sm-10.col-10.graduate
+							img.w-100(src="src/img/graduate.png")
+
+			// Map
+			section#map
+				iframe(src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11988.376790911998!2d69.23824912129805!3d41.30681435132875!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7dc0bdb203851445!2sTHOMPSON+SCHOOL!5e0!3m2!1sru!2s!4v1559109872512!5m2!1sru!2s" width="100%" height="500" frameborder="0" style="border:0" allowfullscreen)
+			// Footer
+			footer
+				h5 thompson.uz | Thompson school
+			// Scripts
+			script(src="src/js/libs.min.js")
+			script(src="src/js/main.js")

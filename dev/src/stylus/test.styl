@@ -1,0 +1,124 @@
+@import 'font.css'
+
+ubuntu = 'Ubuntu'
+
+.btn, button, input, :focus
+	outline none !important
+	box-shadow none !important
+	
+html, body
+	overflow-x hidden !important
+	position relative
+	font-family ubuntu
+	padding-right 0 !important
+
+// Test
+#test
+	margin-bottom 138px
+	h2
+		margin-top 100px
+		margin-bottom 33px
+		font-size 48px
+		text-align center
+		color #000
+		span
+			color #a61d31
+
+	p.test-info
+		margin-bottom 78px
+		font-size 16px
+		font-weight bold
+		color #bdbdbd
+		text-align center
+
+.question
+	margin-bottom 68px
+	p
+		font-size 18px
+		font-weight 500
+		span
+			font-size 14px
+			color #fff
+			margin-right 20px
+			position relative
+			&::before
+				background #a61d31
+				z-index -1
+				content ''
+				position absolute
+				top 50%
+				left 50%
+				transform translate(-50%, -50%)
+				border-radius 50%
+				width 26px
+				height 26px
+			
+.label
+	display inline-block
+	position relative
+	padding 10px 10px
+	padding-left 35px
+	cursor pointer
+	font-size 16px
+	user-select none
+	border-radius 10px
+	transition 0.3s ease
+	
+	&:hover
+		border-color #a61d31
+		transition 0.3s ease 
+		color #a61d31
+
+	input
+		position absolute
+		opacity 0
+		cursor pointer
+		
+		&:checked ~ .checkmark 
+			border-color #a61d31
+			
+			&::after
+				display block
+
+	.checkmark
+		position absolute
+		top 15px
+		left 10px
+		height 15px
+		width 15px
+		border-radius 50%
+		border 2px solid #bdbdbd
+		&::after
+			content ''
+			position absolute
+			display none
+			top 50% 
+			left 51%
+			transform translate(-50%, -50%)
+			width 7px
+			height 7px
+			border-radius 50%
+			background #a61d31
+	
+.get-result
+	margin-top 79px
+	font-weight bold
+	font-size 24px
+	background linear-gradient(180deg, #FFDA0C 0%, #FFBA00 100%, #FFBA00 100%);
+	border-radius: 42px;
+	border-bottom 3px solid #e9a90e
+	padding 25px 100px
+	margin-bottom 8px
+	margin-top 25px
+	transition box-shadow .3s ease
+	box-shadow 1px 1px 30px 10px rgba(#ffd008, 0.25) !important
+	&:hover
+		transition .3s ease
+		box-shadow 1px 1px 30px 10px rgba(#ffd008, 0.5) !important
+	&:focus
+		transition none
+		border-bottom 3px solid #f2b50a
+		background #f2b50a
+		border-top 3px solid #ffda0c
+		box-shadow 0px 1px 30px 10px rgba(#f2b50a, 0.4) !important
+	
