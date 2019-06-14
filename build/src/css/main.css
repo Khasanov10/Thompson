@@ -2020,3 +2020,13 @@ footer h5 {
   position: relative;
   margin: 50px 0;
 }
+
+@media screen and (max-width:1200px) {
+  #take-test .right a.call {
+    font-size: 13px;
+  }
+
+  #target .right .for-call a.call {
+    font-size: 13px;
+  }
+}
