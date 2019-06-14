@@ -124,8 +124,8 @@ html {
   border: 2px solid #bdbdbd;
   top: 15px;
   left: 10px;
-  height: 15px;
-  width: 15px;
+  height: 14px;
+  width: 14px;
 }
 
 .label .checkmark::after {
