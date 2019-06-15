@@ -22,7 +22,7 @@
           <nav class="navbar navbar-expand-lg pr-0 pl-0"><a class="navbar-brand lg" href="index.html"><img src="src/img/logo-navbar.png"/></a><a class="navbar-brand md" href="index.html"><img src="src/img/logo-navbar-sm.png"/></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span><i class="fa fa-bars"></i></span></button>
             <div class="nav-contact">
-              <p>+998 (78) 122 10 10</p><span class="lg"><img src="src/img/icons/nav-call.png"/></span><span class="md"><img src="src/img/icons/nav-call-red.png"/></span><a href="#">заказать звонок</a>
+              <p>+998 (78) 122 10 10</p><span class="lg"><img src="src/img/icons/nav-call.png"/></span><span class="md"><img src="src/img/icons/nav-call-red.png"/></span><a href="#" data-toggle="modal" data-target="#order-call">заказать звонок</a>
             </div>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav mr-auto ml-auto">
@@ -33,7 +33,7 @@
                   <li class="nav-item"><a class="nav-link" href="#contact">Вакансии</a></li>
                   <li class="nav-item">
                     <div class="nav-contact">
-                      <p>+998 (78) 122 10 10</p><span class="lg"><img src="src/img/icons/nav-call.png"/></span><span class="md"><img src="src/img/icons/nav-call-red.png"/></span><a href="#">заказать звонок	</a>
+                      <p>+998 (78) 122 10 10</p><span class="lg"><img src="src/img/icons/nav-call.png"/></span><span class="md"><img src="src/img/icons/nav-call-red.png"/></span><a href="#" data-toggle="modal" data-target="#order-call">заказать звонок	</a>
                     </div>
                   </li>
                   <li class="nav-item"><a class="lang-sm" href="#"><img src="src/img/icons/world-lang-sm.png"/></a></li>
@@ -41,6 +41,29 @@
               </ul>
             </div>
           </nav>
+        </div>
+        <!-- Modal-for-order-call			-->
+        <div class="modal fade" id="order-call" tabindex="-1" role="dialog" aria-labelledby="order-call-label" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="order-call-label">Order Call</h5>
+              </div>
+              <div class="modal-body">
+                <form action="">
+                  <div class="form-group col-lg-12 col-md-10" style="margin-top: 20px">
+                    <label class="form-label" for="modal-name">Ваше имя</label>
+                    <input class="form-control form-input" id="modal-name" type="text"/>
+                  </div>
+                  <div class="form-group col-lg-12 col-md-10">
+                    <label class="form-label" for="modal-phone">Номер телефона</label>
+                    <input class="form-control form-input" id="modal-phone" type="text"/>
+                  </div>
+                  <div class="center"><a class="modal-btn btn" href="#" style="background: #a61d31; color:#fff; font-size: 14px; padding: 7px 40px; font-weight: 500; border-radius: 20px; margin-bottom: 20px">Send</a></div>
+                </form>
+              </div>
+            </div>
+          </div>
         </div><a class="lang" href="#"><img src="src/img/icons/world-lang.png"/></a>
       </div>
       <!-- Showcase-->
@@ -92,11 +115,13 @@
     <!-- Modal-for-video			-->
     <div class="modal fade" id="video-modal" tabindex="1" role="dialog" aria-labelledby="video-modal-label" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-body">
-          <video class="w-100" controls="controls">
-            <!-- Put video into video folder-->
-            <source src="src/video/thompson.mp4" type="video/mp4"/>Your browser does not support the video tag.
-          </video>
+        <div class="modal-content" style="background: transparent;">
+          <div class="modal-body">
+            <video class="w-100" controls="controls">
+              <!-- Put video into video folder-->
+              <source src="src/video/thompson.mp4" type="video/mp4"/>Your browser does not support the video tag.
+            </video>
+          </div>
         </div>
       </div>
     </div>
@@ -272,9 +297,32 @@
                 <input class="form-control form-input" id="phone" type="text"/>
               </div>
               <div class="center"><a class="test-button btn" href="test.html">Подобрать курс!</a>
-                <div class="for-call"><span><img src="src/img/icons/order-call.png"/></span><a class="call" href="#">заказать звонок	</a></div>
+                <div class="for-call"><span><img src="src/img/icons/order-call.png"/></span><a class="call" href="#" data-toggle="modal" data-target="#order-call">заказать звонок</a></div>
               </div>
             </form>
+          </div>
+        </div>
+        <!-- Modal-for-order-call			-->
+        <div class="modal fade" id="order-call" tabindex="-1" role="dialog" aria-labelledby="order-call-label" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="order-call-label">Order Call</h5>
+              </div>
+              <div class="modal-body">
+                <form action="">
+                  <div class="form-group col-lg-12 col-md-10" style="margin-top: 20px">
+                    <label class="form-label" for="modal-name">Ваше имя</label>
+                    <input class="form-control form-input" id="modal-name" type="text"/>
+                  </div>
+                  <div class="form-group col-lg-12 col-md-10">
+                    <label class="form-label" for="modal-phone">Номер телефона</label>
+                    <input class="form-control form-input" id="modal-phone" type="text"/>
+                  </div>
+                  <div class="center"><a class="modal-btn btn" href="#" style="background: #a61d31; color:#fff; font-size: 14px; padding: 7px 40px; font-weight: 500; border-radius: 20px; margin-bottom: 20px">Send</a></div>
+                </form>
+              </div>
+            </div>
           </div>
         </div>
       </div>
