@@ -403,7 +403,7 @@
                 <input class="form-control form-input" id="phone" type="text"/>
               </div>
               <div class="center"><a class="test-button btn" href="#">Подобрать курс!</a>
-                <div class="for-call"><span><img src="src/img/icons/order-call.png"/></span><a class="call" href="#">заказать звонок</a></div>
+                <div class="for-call"><span><img src="src/img/icons/order-call.png"/></span><a class="call" href="#" data-toggle="modal" data-target="#order-call">заказать звонок</a></div>
               </div>
               <div class="tip-third">
                 <div><img src="src/img/icons/target-arrow.png"/></div>
@@ -417,6 +417,29 @@
                 <div class="circle circle-2">
                   <div class="circle circle-3"></div>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Modal-for-order-call			-->
+        <div class="modal fade" id="order-call" tabindex="-1" role="dialog" aria-labelledby="order-call-label" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="order-call-label">Order Call</h5>
+              </div>
+              <div class="modal-body">
+                <form action="">
+                  <div class="form-group col-lg-12 col-md-10" style="margin-top: 20px">
+                    <label class="form-label" for="modal-name">Ваше имя</label>
+                    <input class="form-control form-input" id="modal-name" type="text"/>
+                  </div>
+                  <div class="form-group col-lg-12 col-md-10">
+                    <label class="form-label" for="modal-phone">Номер телефона</label>
+                    <input class="form-control form-input" id="modal-phone" type="text"/>
+                  </div>
+                  <div class="center"><a class="modal-btn btn" href="#" style="background: #a61d31; color:#fff; font-size: 14px; padding: 7px 40px; font-weight: 500; border-radius: 20px; margin-bottom: 20px">Send</a></div>
+                </form>
               </div>
             </div>
           </div>
