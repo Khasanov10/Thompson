@@ -9,6 +9,10 @@ input {
   box-shadow: none!important;
 }
 
+.modal {
+  padding-right: 0;
+}
+
 .center {
   display: -webkit-box;
   display: -webkit-flex;
@@ -216,6 +220,32 @@ html {
     margin-top: 15px;
     padding-left: 7px;
   }
+}
+
+#header #order-call .modal-body {
+  background: #fff;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+#header #order-call .modal-body .form-group label,
+#take-test .right .form-group label {
+  color: rgba(0,0,0,.6);
+  font-size: 14px;
+  margin-left: -5px;
+}
+
+#header #order-call .modal-body .form-group input,
+#take-test .right .form-group input {
+  margin-top: 0;
+  background: 0 0;
+  border: 0;
+  border-bottom: 2px solid #fbcd36!important;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  color: #000;
+  font-weight: 500;
+  padding-left: 0;
 }
 
 #header .lang,
@@ -1213,24 +1243,6 @@ html {
   margin: 10px auto;
 }
 
-#take-test .right .form-group label {
-  color: rgba(0,0,0,.6);
-  font-size: 14px;
-  margin-left: -5px;
-}
-
-#take-test .right .form-group input {
-  margin-top: 0;
-  background: 0 0;
-  border: 0;
-  border-bottom: 2px solid #fbcd36!important;
-  -webkit-border-radius: 0;
-  border-radius: 0;
-  color: #000;
-  font-weight: 500;
-  padding-left: 0;
-}
-
 @media screen and (max-width:576px) {
   #take-test .right #name {
     margin-top: 0;
@@ -1311,7 +1323,6 @@ html {
   color: #000;
   font-weight: 300;
   font-size: 16px;
-  text-decoration: underline;
   -webkit-transition: .3s ease;
   -o-transition: .3s ease;
   transition: .3s ease;
@@ -1319,7 +1330,7 @@ html {
 
 #take-test .right a.call:hover,
 #target .right .for-call a.call:hover {
-  text-decoration: none;
+  text-decoration: underline;
   -webkit-transition: .3s ease;
   -o-transition: .3s ease;
   transition: .3s ease;
@@ -1728,7 +1739,6 @@ html {
   margin-top: 10px;
   font-weight: 300;
   font-size: 16px;
-  text-decoration: underline;
   -webkit-transition: .3s ease;
   -o-transition: .3s ease;
   transition: .3s ease;
@@ -2019,14 +2029,4 @@ footer h5 {
 .form-input {
   position: relative;
   margin: 50px 0;
-}
-
-@media screen and (max-width:1200px) {
-  #take-test .right a.call {
-    font-size: 13px;
-  }
-
-  #target .right .for-call a.call {
-    font-size: 13px;
-  }
 }
