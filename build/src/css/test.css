@@ -9,12 +9,231 @@ input {
   box-shadow: none!important;
 }
 
+.center {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+@media screen and (max-width:991px) {
+  .lg {
+    display: none;
+  }
+}
+
+@media screen and (min-width:992px) {
+  .md {
+    display: none;
+  }
+}
+
 body,
 html {
   overflow-x: hidden!important;
   position: relative;
   font-family: 'Ubuntu';
   padding-right: 0!important;
+}
+
+#header {
+  background: #a61d31;
+}
+
+@media screen and (max-width:991px) {
+  #header {
+    background: #fff;
+    border-top: 1.5px solid #a61d31;
+  }
+}
+
+#header .navbar-toggler {
+  display: none;
+}
+
+#header .navbar-nav .nav-link {
+  padding-right: 14px!important;
+  padding-left: 14px!important;
+  color: #fff;
+}
+
+#header .navbar-nav .nav-link:hover {
+  color: main;
+}
+
+@media screen and (max-width:1200px) {
+  #header .navbar-nav .nav-link {
+    padding-right: 7px!important;
+    padding-left: 7px!important;
+  }
+}
+
+@media screen and (max-width:991px) {
+  #header .navbar-nav {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: 15px auto;
+  }
+
+  #header .navbar-nav .nav-link {
+    color: #000;
+  }
+
+  #header .navbar-nav .nav-link:hover {
+    color: #a61d31;
+  }
+}
+
+@media screen and (max-width:768px) {
+  #header .navbar-nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+#header .nav-contact {
+  -webkit-box-ordinal-group: 3;
+  -webkit-order: 2;
+  -ms-flex-order: 2;
+  order: 2;
+  color: #fff;
+}
+
+#header .nav-contact p {
+  font-weight: 700;
+  margin-bottom: 0;
+  font-size: 20px;
+}
+
+#header .nav-contact span img {
+  margin-right: 10px;
+}
+
+#header .nav-contact a,
+#header .nav-contact a:hover,
+#header .navbar-nav .nav-link,
+#header .navbar-nav .nav-link:hover {
+  -webkit-transition: .3s ease;
+  -o-transition: .3s ease;
+  transition: .3s ease;
+}
+
+#header .nav-contact a {
+  color: #fff;
+  font-weight: 300;
+  font-size: 16px;
+  text-decoration: underline;
+}
+
+#header .nav-contact a:hover {
+  text-decoration: none;
+}
+
+@media screen and (max-width:1200px) {
+  #header .nav-contact p {
+    font-size: 15px;
+  }
+
+  #header .nav-contact a {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width:991px) {
+  #header .nav-contact {
+    position: absolute;
+    top: 8px;
+    right: 0;
+    margin-right: 100px;
+  }
+
+  #header .nav-contact p {
+    font-size: 18px;
+    color: #000;
+  }
+
+  #header .nav-contact a {
+    color: #000;
+    text-decoration: none!important;
+  }
+}
+
+@media screen and (max-width:480px) {
+  #header .nav-contact {
+    display: none;
+  }
+}
+
+#header .nav-item .nav-contact {
+  display: none;
+}
+
+@media screen and (max-width:480px) {
+  #header .nav-item .nav-contact {
+    display: block;
+    position: relative;
+    top: unset;
+    right: unset;
+    margin-top: 15px;
+    padding-left: 7px;
+  }
+}
+
+#header .lang,
+#header .lang-sm:hover,
+#header .lang:hover {
+  -webkit-transition: .3s ease;
+  -o-transition: .3s ease;
+  transition: .3s ease;
+}
+
+#header .lang {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  opacity: .5;
+}
+
+#header .lang-sm:hover,
+#header .lang:hover {
+  opacity: 1;
+}
+
+@media screen and (max-width:1100px) {
+  #header .lang {
+    display: none;
+  }
+}
+
+#header .lang-sm {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  display: none;
+}
+
+@media screen and (max-width:992px) {
+  #header .lang-sm {
+    display: block;
+  }
 }
 
 #test {
@@ -73,6 +292,7 @@ html {
   height: 26px;
 }
 
+#header .lang-sm,
 .label,
 .label:hover {
   -webkit-transition: .3s ease;
@@ -124,8 +344,8 @@ html {
   border: 2px solid #bdbdbd;
   top: 15px;
   left: 10px;
-  height: 14px;
-  width: 14px;
+  height: 15px;
+  width: 15px;
 }
 
 .label .checkmark::after {
