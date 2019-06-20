@@ -53,15 +53,6 @@ $(document).ready(function() {
         }]
     });
 
-    // Smooth scrolling
-    var scrollLink = $('.nav-link');
-
-    scrollLink.click(function(e) {
-        e.preventDefault();
-        $('body,html').animate({
-            scrollTop: $(this.hash).offset().top + 100
-        }, 1000);
-    });
 
     $('input').focus(function() {
         $(this).parents('.form-group').addClass('focused');
@@ -77,6 +68,12 @@ $(document).ready(function() {
         }
     })
 
+
+    $('.content').readmore({
+        speed: 1500,
+        moreLink: '<a href="#" class="learn-more">Learn more <span><img src="src/img/icons/test-chevron-down.png"></span></a>',
+        lessLink: '<a href="#" class="learn-less">Learn more <span><img src="src/img/icons/test-chevron-up.png"></span></a>'
+    });
 })
 
 function openCity(evt, cityName) {

@@ -1,103 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"/>
-    <meta name="author" content=""/>
-    <meta name="description" content="Some text"/>
-    <link rel="icon" href="src/img/icons/favicon.png"/>
-    <link rel="stylesheet" href="src/css/libs.min.css"/>
-    <link rel="stylesheet" href="src/css/test.css"/>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+    <meta name="author" content="" />
+    <meta name="description" content="Some text" />
+    <link rel="icon" href="src/img/icons/favicon.png" />
+    <link rel="stylesheet" href="src/css/libs.min.css" />
+    <link rel="stylesheet" href="src/css/test.css" />
     <title>Test</title>
-  </head>
-  <body>
+</head>
+
+<body>
     <!-- Header-->
     <div id="header">
-      <div class="container pr-0">
-        <!-- Navbar-->
-        <nav class="navbar navbar-expand-lg pr-0 pl-0"><a class="navbar-brand lg" href="index.html"><img src="src/img/logo-navbar.png"/></a><a class="navbar-brand md" href="index.html"><img src="src/img/logo-navbar-sm.png"/></a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span><i class="fa fa-bars"></i></span></button>
-          <div class="nav-contact">
-            <p>+998 (78) 122 10 10</p><span class="lg"><img src="src/img/icons/nav-call.png"/></span><span class="md"><img src="src/img/icons/nav-call-red.png"/></span><a href="#">заказать звонок</a>
-          </div>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto ml-auto">
-              <li class="nav-item">
+        <div class="container pr-0">
+            <!-- Navbar-->
+            <nav class="navbar navbar-expand-lg pr-0 pl-0"><a class="navbar-brand lg" href="index.html"><img src="src/img/logo-navbar.png" /></a><a class="navbar-brand md" href="index.html"><img src="src/img/logo-navbar-sm.png" /></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span><i class="fa fa-bars"></i></span></button>
                 <div class="nav-contact">
-                  <p>+998 (78) 122 10 10</p><span class="lg"><img src="src/img/icons/nav-call.png"/></span><span class="md"><img src="src/img/icons/nav-call-red.png"/></span><a href="#">заказать звонок	</a>
+                    <p>+998 (78) 122 10 10</p><span class="lg"><img src="src/img/icons/nav-call.png" /></span><span class="md"><img src="src/img/icons/nav-call-red.png" /></span><a href="#" data-toggle="modal" data-target="#order-call">заказать звонок</a>
                 </div>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </div><a class="lang" href="#"><img src="src/img/icons/world-lang.png"/></a><a class="lang-sm" href="#"><img src="src/img/icons/world-lang-sm.png"/></a>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto ml-auto">
+                        <li class="nav-item active"><a class="nav-link" href="#why">Почему мы?<span class="sr-only">(current)</span></a>
+                        <li class="nav-item active"><a class="nav-link" href="#course-info">Наши курсы</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#comments">Мнения людей</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#team">Наша команда</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Вакансии</a></li>
+                        <li class="nav-item">
+                            <div class="nav-contact">
+                                <p>+998 (78) 122 10 10</p><span class="lg"><img src="src/img/icons/nav-call.png" /></span><span class="md"><img src="src/img/icons/nav-call-red.png" /></span><a href="#" data-toggle="modal" data-target="#order-call">заказать звонок </a>
+                            </div>
+                        </li>
+                        <li class="nav-item lang-sm dropdown-sm">
+                            <div class="">
+                                <a class="dropbtn-sm" href="#"><img src="src/img/icons/world-lang-sm.png" /></a>
+                                <div class="dropdown-content-sm">
+                                    <a href="#">Eng</a>
+                                    <a href="#" class="active-sm">Ru</a>
+                                    <a href="#">Uz</a>
+                                </div>
+                            </div>
+                        </li>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <!-- Modal-for-order-call     -->
+        <div class="modal fade" id="order-call" tabindex="-1" role="dialog" aria-labelledby="order-call-label" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="order-call-label">Order Call</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="">
+                            <div class="form-group col-lg-12 col-md-10" style="margin-top: 20px">
+                                <label class="form-label" for="modal-name">Ваше имя</label>
+                                <input class="form-control form-input" id="modal-name" type="text" />
+                            </div>
+                            <div class="form-group col-lg-12 col-md-10">
+                                <label class="form-label" for="modal-phone">Номер телефона</label>
+                                <input class="form-control form-input" id="modal-phone" type="text" />
+                            </div>
+                            <div class="center"><a class="modal-btn btn" href="#" style="background: #a61d31; color:#fff; font-size: 14px; padding: 7px 40px; font-weight: 500; border-radius: 20px; margin-bottom: 20px">Send</a></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="lang dropdown">
+            <a class="dropbtn" href="#"><img src="src/img/icons/world-lang.png" /></a>
+            <div class="dropdown-content">
+                <a href="#">Eng</a>
+                <a href="#" class="active">Ru</a>
+                <a href="#">Uz</a>
+            </div>
+        </div>
+
     </div>
     <div id="test">
-      <div class="container">
-        <h2>Let's define your level!<br/><span>English</span></h2>
-        <p class="test-info">This test includes 10 questions</p>
-        <div class="question">
-          <p><span>1</span>Adrian ... to go to the cinema today.</p>
-          <form action="">
-            <div>
-              <label class="label">want
-                <input type="radio" checked="checked" name="radio"/><span class="checkmark"></span>
-              </label>
+        <div class="container">
+            <h2>Let's define your level!<br /><span>English</span></h2>
+            <p class="test-info">This test includes 10 questions</p>
+            <div class="question">
+                <p><span>1</span>Adrian ... to go to the cinema today.</p>
+                <form action="">
+                    <div>
+                        <label class="label">want
+                            <input type="radio" name="radio" /><span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <div>
+                        <label class="label">wants
+                            <input type="radio" name="radio" /><span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <div>
+                        <label class="label">go
+                            <input type="radio" name="radio" /><span class="checkmark"></span>
+                        </label>
+                    </div>
+                </form>
             </div>
-            <div>
-              <label class="label">wants
-                <input type="radio" checked="checked" name="radio"/><span class="checkmark"></span>
-              </label>
+            <div class="question">
+                <p><span>2</span>Continue the sentence below: If I learn english, ...</p>
+                <form action="">
+                    <div>
+                        <label class="label">
+                            I will broad my horizons
+                            <input type="radio" name="radio" /><span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <div>
+                        <label class="label">I broad my horizons
+                            <input type="radio" name="radio" /><span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <div>
+                        <label class="label">I am broading my horizons
+                            <input type="radio" name="radio" /><span class="checkmark"></span>
+                        </label>
+                    </div>
+                </form>
             </div>
-            <div>
-              <label class="label">go
-                <input type="radio" checked="checked" name="radio"/><span class="checkmark"></span>
-              </label>
-            </div>
-          </form>
+            <div class="question">
+                <p><span>3</span>Adrian ... to go to the cinema today.</p>
+                <form action="">
+                    <div>
+                        <label class="label">want
+                            <input type="radio" name="radio" /><span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <div>
+                        <label class="label">wants
+                            <input type="radio" name="radio" /><span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <div>
+                        <label class="label">go
+                            <input type="radio" name="radio" /><span class="checkmark"></span>
+                        </label>
+                    </div>
+                </form>
+            </div><a class="get-result btn" href="congrat.html">Get my result! </a>
         </div>
-        <div class="question">
-          <p><span>2</span>Continue the sentence below: If I learn english, ...</p>
-          <form action="">
-            <div>
-              <label class="label">
-                 I will broad my horizons
-                <input type="radio" checked="checked" name="radio"/><span class="checkmark"></span>
-              </label>
-            </div>
-            <div>
-              <label class="label">I broad my horizons
-                <input type="radio" checked="checked" name="radio"/><span class="checkmark"></span>
-              </label>
-            </div>
-            <div>
-              <label class="label">I am broading my horizons
-                <input type="radio" checked="checked" name="radio"/><span class="checkmark"></span>
-              </label>
-            </div>
-          </form>
-        </div>
-        <div class="question">
-          <p><span>3</span>Adrian ... to go to the cinema today.</p>
-          <form action="">
-            <div>
-              <label class="label">want
-                <input type="radio" checked="checked" name="radio"/><span class="checkmark"></span>
-              </label>
-            </div>
-            <div>
-              <label class="label">wants
-                <input type="radio" checked="checked" name="radio"/><span class="checkmark"></span>
-              </label>
-            </div>
-            <div>
-              <label class="label">go
-                <input type="radio" checked="checked" name="radio"/><span class="checkmark"></span>
-              </label>
-            </div>
-          </form>
-        </div><a class="get-result btn" href="congrat.html">Get my result!		</a>
-      </div>
     </div>
-  </body>
+    <!-- Scripts-->
+    <script src="src/js/libs.min.js"></script>
+    <script src="src/js/main.js"></script>
+</body>
+
 </html>
