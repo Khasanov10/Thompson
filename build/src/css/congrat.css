@@ -256,7 +256,6 @@ footer {
 .dropdown-content a.active {
     position: relative;
     color: #fff;
-    border-bottom: 2px solid #fff;
 }
 
 .dropdown-content a {
@@ -293,7 +292,6 @@ footer {
 .dropdown-content-sm a.active-sm {
     position: relative;
     color: #a61d31;
-    border-bottom: 2px solid #a61d31;
     opacity: 1;
 }
 
