@@ -340,7 +340,6 @@ html {
 .dropdown-content-sm a.active-sm {
     position: relative;
     color: #a61d31;
-    border-bottom: 2px solid #a61d31;
     opacity: 1;
 }
 
